@@ -1,72 +1,297 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Raj Home Tuition</title>
+
+<title>Raj Home Tution Patna</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
-body{margin:0;font-family:Arial;}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
 
-header{
+body{
+background:#f5f7fb;
+}
+
+/* TOP BAR */
+.topbar{
+background:#0b2c5f;
+color:#fff;
+padding:8px 20px;
 display:flex;
 justify-content:space-between;
-padding:15px;
-background:white;
+font-size:14px;
 }
 
+/* NAVBAR */
+header{
+background:#fff;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+font-size:22px;
+font-weight:700;
+color:#0b2c5f;
+}
+
+nav a{
+margin:0 10px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+.call-btn{
+background:#0b2c5f;
+color:#fff;
+padding:8px 15px;
+border-radius:6px;
+}
+
+/* HERO */
 .hero{
 display:flex;
-flex-wrap:wrap;
-padding:30px;
 align-items:center;
+justify-content:space-between;
+padding:50px 20px;
+background:linear-gradient(135deg,#ffffff,#eaf1ff);
 }
 
-.text{
-max-width:500px;
+.hero-text{
+max-width:50%;
 }
 
-h1{
-color:#0b2a5c;
+.hero h1{
+font-size:40px;
+color:#0b2c5f;
 }
 
-span{color:orange;}
+.hero h1 span{
+color:#ff9900;
+}
 
-.btn{
-padding:10px;
+.hero p{
+margin:15px 0;
+}
+
+.hero-btns a{
+display:inline-block;
 margin-right:10px;
+padding:10px 18px;
+border-radius:6px;
 text-decoration:none;
-color:white;
+color:#fff;
+}
+
+.call{
+background:#0b2c5f;
+}
+
+.whatsapp{
+background:#25d366;
+}
+
+.hero img{
+width:45%;
+border-radius:10px;
+}
+
+/* SERVICES */
+.services{
+text-align:center;
+padding:40px 20px;
+}
+
+.services h2{
+color:#0b2c5f;
+margin-bottom:20px;
+}
+
+.cards{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.card{
+background:#fff;
+padding:20px;
+border-radius:10px;
+width:220px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* FORM */
+.form-section{
+display:flex;
+gap:20px;
+padding:40px 20px;
+flex-wrap:wrap;
+}
+
+.form-box{
+flex:1;
+background:#0b2c5f;
+padding:20px;
+border-radius:10px;
+color:#fff;
+}
+
+.form-box input, .form-box textarea{
+width:100%;
+margin:8px 0;
+padding:10px;
+border:none;
 border-radius:5px;
 }
 
-.call{background:#0b2a5c;}
-.whatsapp{background:green;}
+.form-box button{
+background:#ff9900;
+border:none;
+padding:10px;
+color:#fff;
+border-radius:5px;
+cursor:pointer;
+}
 
-img{
-width:300px;
-border-radius:10px;
+/* FLOAT BUTTONS */
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:#fff;
+padding:12px;
+border-radius:50%;
+font-size:20px;
+}
+
+.call-float{
+position:fixed;
+bottom:80px;
+right:20px;
+background:#0b2c5f;
+color:#fff;
+padding:12px;
+border-radius:50%;
+font-size:20px;
 }
 </style>
+
 </head>
 
 <body>
 
+<!-- TOP BAR -->
+<div class="topbar">
+<div>📞 9117020347 | WhatsApp</div>
+<div>rajhometution01@gmail.com</div>
+</div>
+
+<!-- HEADER -->
 <header>
-<img src="logo.png" height="50">
+<div class="logo">RAJ HOME TUTION</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</nav>
+
+<a href="tel:9117020347" class="call-btn">Call Now</a>
 </header>
 
-<div class="hero">
+<!-- HERO -->
+<section class="hero">
 
-<div class="text">
+<div class="hero-text">
 <h1>Patna ka Sabse <span>Oldest</span> Home Tuition Provider</h1>
 
-<a href="tel:9117020347" class="btn call">Call</a>
-<a href="https://wa.me/919117020347" class="btn whatsapp">WhatsApp</a>
+<p>Nursery to 12th | All Subjects | Competitive Exams</p>
+
+<div class="hero-btns">
+<a href="tel:9117020347" class="call">Call Now</a>
+<a href="https://wa.me/919117020347" class="whatsapp">WhatsApp</a>
+</div>
 </div>
 
-<img src="https://img.freepik.com/free-photo/teacher-helping-student-homework_23-2148892568.jpg">
+<img src="https://images.unsplash.com/photo-1588072432836-e10032774350">
+
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+<h2>Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Home Tuition</h3>
+<p>Personal teacher at your home</p>
+</div>
+
+<div class="card">
+<h3>Online Classes</h3>
+<p>Live interactive classes</p>
+</div>
+
+<div class="card">
+<h3>All Subjects</h3>
+<p>Maths, Science, English</p>
+</div>
+
+<div class="card">
+<h3>Exam Prep</h3>
+<p>IIT-JEE, NEET</p>
+</div>
 
 </div>
+</section>
+
+<!-- FORM -->
+<section class="form-section">
+
+<div class="form-box">
+<h3>Join as Parent</h3>
+<input placeholder="Your Name">
+<input placeholder="Phone Number">
+<textarea placeholder="Message"></textarea>
+<button>Submit</button>
+</div>
+
+<div class="form-box">
+<h3>Join as Tutor</h3>
+<input placeholder="Your Name">
+<input placeholder="Subject">
+<input placeholder="Experience">
+<button>Apply</button>
+</div>
+
+</section>
+
+<!-- FLOAT BUTTONS -->
+<a href="https://wa.me/919117020347" class="whatsapp-float">💬</a>
+<a href="tel:9117020347" class="call-float">📞</a>
 
 </body>
 </html>
