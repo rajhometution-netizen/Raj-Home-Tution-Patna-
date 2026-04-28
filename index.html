@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Best Home Tuition in Patna | Raj Home Tuition</title>
+
+<meta name="description" content="Best Home Tuition in Patna. Raj Home Tuition provides expert tutors for all classes.">
+<meta name="keywords" content="Home Tuition Patna, Tutor Patna, Raj Home Tuition">
+
+<style>
+body { margin:0; font-family: Arial; }
+
+header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 20px;
+  box-shadow:0 2px 5px #ccc;
+}
+
+header img { height:60px; }
+
+nav a {
+  margin:0 10px;
+  text-decoration:none;
+  color:#333;
+  font-weight:bold;
+}
+
+.hero {
+  background: linear-gradient(to right,#007bff,#00c6ff);
+  color:white;
+  padding:80px 20px;
+  text-align:center;
+}
+
+.btn {
+  background:#ff9800;
+  padding:10px 20px;
+  color:white;
+  border-radius:5px;
+  text-decoration:none;
+  margin:5px;
+  display:inline-block;
+}
+
+.section { padding:40px; text-align:center; }
+
+.cards {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.card {
+  width:250px;
+  margin:15px;
+  padding:20px;
+  box-shadow:0 0 10px #ccc;
+  border-radius:10px;
+}
+
+input, textarea {
+  width:90%;
+  padding:10px;
+}
+
+footer {
+  background:#222;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+.whatsapp {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25d366;
+  color:white;
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  text-align:center;
+  line-height:55px;
+  font-size:25px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo.png">
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Our Services</a>
+    <a href="#">Join Us a Parents</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Patna ka Trusted Home Tuition Provider</h1>
+  <p>Nursery to 12th | All Subjects | Competitive Exams</p>
+
+  <a href="tel:9117020347" class="btn">📞 Call Now</a>
+  <a href="https://wa.me/919117020347" class="btn">💬 WhatsApp</a>
+</section>
+
+<section class="section">
+  <h2>Our Services</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Home Tuition</h3>
+      <p>Personal teacher at your home</p>
+    </div>
+
+    <div class="card">
+      <h3>Online Classes</h3>
+      <p>Live interactive classes</p>
+    </div>
+
+    <div class="card">
+      <h3>Exam Prep</h3>
+      <p>IIT-JEE, NEET, Boards</p>
+    </div>
+  </div>
+</section>
+
+<!-- PARENTS FORM -->
+<section class="section">
+  <h2>Join Us a Parents</h2>
+
+  <form id="studentForm">
+    <input type="text" id="name" placeholder="Your Name"><br><br>
+    <input type="text" id="phone" placeholder="Phone Number"><br><br>
+    <textarea id="message" placeholder="Message"></textarea><br><br>
+    <button class="btn">Submit</button>
+  </form>
+</section>
+
+<!-- TEACHER FORM -->
+<section class="section">
+  <h2>Join Us a Tutor</h2>
+
+  <form id="teacherForm">
+    <input type="text" id="tname" placeholder="Your Name"><br><br>
+    <input type="text" id="tsubject" placeholder="Subject"><br><br>
+    <input type="text" id="texp" placeholder="Experience"><br><br>
+    <button class="btn">Apply</button>
+  </form>
+</section>
+
+<section class="section">
+  <h2>Contact</h2>
+  <p>📞 9117020347</p>
+  <p>📧 rajhometution01@gmail.com</p>
+  <p>📍 Patna, Bihar</p>
+</section>
+
+<footer>
+  © 2026 Raj Home Tuition
+</footer>
+
+<a href="https://wa.me/919117020347" class="whatsapp">💬</a>
+
+<script>
+
+// Parents Form
+document.getElementById("studentForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  fetch("YOUR_SCRIPT_URL", {
+    method:"POST",
+    body: JSON.stringify({
+      name: document.getElementById("name").value,
+      phone: document.getElementById("phone").value,
+      message: document.getElementById("message").value
+    })
+  }).then(()=>{
+    alert("✅ Thank you! Our team will contact you within 3 days.");
+    document.getElementById("studentForm").reset();
+  });
+});
+
+// Teacher Form
+document.getElementById("teacherForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  fetch("YOUR_SCRIPT_URL", {
+    method:"POST",
+    body: JSON.stringify({
+      name: document.getElementById("tname").value,
+      subject: document.getElementById("tsubject").value,
+      experience: document.getElementById("texp").value
+    })
+  }).then(()=>{
+    alert("✅ Thank you! Our team will contact you within 3 days.");
+    document.getElementById("teacherForm").reset();
+  });
+});
+
+</script>
+
+</body>
+</html>
