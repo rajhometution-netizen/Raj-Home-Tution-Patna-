@@ -3,248 +3,197 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raj Home Tuition Patna</title>
 
-<title>Best Home Tuition in Patna | Raj Home Tuition</title>
-
-<meta name="description" content="Patna ka trusted home tuition provider. Nursery to 12th, IIT-JEE, NEET preparation.">
-<meta name="keywords" content="Home tuition Patna, tutor Patna, coaching Patna">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body{
-margin:0;
-font-family:'Poppins',sans-serif;
-}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#f5f7fb}
 
 /* TOP BAR */
 .topbar{
-background:#0d2b5c;
-color:#fff;
-display:flex;
-justify-content:space-between;
-padding:8px 20px;
-font-size:14px;
+background:#0b2a5c;color:#fff;padding:8px 20px;
+display:flex;justify-content:space-between;font-size:13px;
 }
 
 /* HEADER */
 header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 30px;
-background:#fff;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
+display:flex;justify-content:space-between;align-items:center;
+padding:15px 30px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.1);
 }
-
-.logo{
-display:flex;
-align-items:center;
-gap:10px;
-}
-
-.logo img{
-height:60px;
-}
+header img{height:65px}
 
 nav a{
-margin:0 12px;
-text-decoration:none;
-color:#333;
-font-weight:500;
+margin:0 12px;text-decoration:none;color:#333;font-weight:500;
 }
-
 .call-btn{
-background:#0d2b5c;
-color:#fff;
-padding:10px 18px;
-border-radius:8px;
+background:#0b2a5c;color:#fff;padding:10px 16px;border-radius:8px;
 }
 
 /* HERO */
 .hero{
-display:flex;
-align-items:center;
-padding:60px 30px;
-background:linear-gradient(to right,#f8f9fb,#fff);
+display:flex;align-items:center;justify-content:space-between;
+padding:60px 30px;background:#fff;flex-wrap:wrap;
 }
+.hero-left{max-width:520px}
+.hero h1{font-size:40px;color:#0b2a5c}
+.hero h1 span{color:#f4a51c}
+.hero p{margin:15px 0;color:#555}
 
-.hero-text{
-flex:1;
-}
-
-.hero h1{
-font-size:40px;
-color:#0d2b5c;
-}
-
-.hero h1 span{
-color:#f9b233;
-}
-
-.hero p{
-color:#555;
-margin:15px 0;
+.features span{
+margin-right:15px;font-size:14px;display:inline-block;margin-top:10px;
 }
 
 .btn{
-padding:12px 20px;
-border-radius:8px;
-margin-right:10px;
-text-decoration:none;
-display:inline-block;
+padding:12px 20px;border-radius:8px;text-decoration:none;
+margin-right:10px;display:inline-block;color:#fff;
 }
-
-.call{
-background:#0d2b5c;
-color:#fff;
-}
-
-.whatsapp{
-background:#25D366;
-color:#fff;
-}
+.call{background:#0b2a5c}
+.whatsapp{background:#25D366}
 
 .hero img{
-width:420px;
-border-radius:10px;
+width:500px;border-radius:10px;
 }
 
 /* SERVICES */
-.services{
-text-align:center;
-padding:50px 20px;
-}
-
+.services{text-align:center;padding:40px}
+.services h2{margin-bottom:20px;color:#0b2a5c}
 .cards{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
+display:flex;gap:20px;justify-content:center;flex-wrap:wrap;
 }
-
 .card{
-background:#fff;
-padding:20px;
-border-radius:12px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-width:220px;
+background:#fff;padding:25px;border-radius:10px;width:220px;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
 }
 
 /* FORMS */
-.forms{
-display:flex;
-gap:20px;
-padding:40px;
-background:#0d2b5c;
-color:#fff;
+.form-section{
+display:flex;gap:20px;padding:40px;background:#0b2a5c;flex-wrap:wrap;
 }
-
 .form-box{
-background:#fff;
-color:#000;
-padding:20px;
-border-radius:10px;
-flex:1;
+background:#fff;padding:20px;border-radius:10px;flex:1;
 }
-
 input,textarea{
-width:100%;
-padding:10px;
-margin:10px 0;
-border-radius:6px;
-border:1px solid #ccc;
+width:100%;padding:10px;margin:8px 0;border:1px solid #ccc;
+}
+button{
+padding:10px 15px;border:none;border-radius:5px;color:#fff;
+cursor:pointer;
+}
+.submit{background:#f4a51c}
+.apply{background:#25D366}
+
+/* POPUP */
+.popup{
+display:none;position:fixed;top:50%;left:50%;
+transform:translate(-50%,-50%);
+background:#fff;padding:20px;border-radius:10px;
+box-shadow:0 0 10px #999;text-align:center;
 }
 
-.submit{
-background:#f9b233;
-color:#fff;
-border:none;
-padding:10px;
-border-radius:6px;
-}
-
-/* WHATSAPP FLOAT */
+/* FLOAT BUTTONS */
 .whatsapp-float{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:#fff;
-padding:15px;
-border-radius:50%;
-font-size:22px;
+position:fixed;bottom:20px;right:20px;
+background:#25D366;color:#fff;padding:14px;border-radius:50%;
+}
+.call-float{
+position:fixed;bottom:90px;right:20px;
+background:#0b2a5c;color:#fff;padding:14px;border-radius:50%;
 }
 </style>
 </head>
 
 <body>
 
+<!-- TOP BAR -->
 <div class="topbar">
-<div>📞 9117020347 | 📧 rajhometution01@gmail.com</div>
+<div>📞 9117020347 | 💬 9117020347 | ✉ rajhometution01@gmail.com</div>
 <div>Follow us</div>
 </div>
 
+<!-- HEADER -->
 <header>
-<div class="logo">
 <img src="logo.png">
-</div>
-
 <nav>
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Services</a>
-<a href="#">Gallery</a>
-<a href="#">Contact</a>
+<a>Home</a>
+<a>About</a>
+<a>Services</a>
+<a>Gallery</a>
+<a>Contact</a>
 </nav>
-
 <a href="tel:9117020347" class="call-btn">Call Now</a>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-<div class="hero-text">
-<h1>Patna ka Sabse <span>Oldest</span> Home Tuition Provider</h1>
-<p>Experienced tutors for Nursery to 12th & Competitive Exams</p>
+<div class="hero-left">
+<h1>Patna ka Sabse <span>Oldest</span><br>Home Tuition Provider</h1>
+<p>We provide experienced and qualified tutors for all classes.</p>
 
+<div class="features">
+<span>🏠 Home Tuition</span>
+<span>💻 Online Classes</span>
+<span>📚 All Subjects</span>
+</div>
+
+<br>
 <a href="tel:9117020347" class="btn call">Call Now</a>
 <a href="https://wa.me/919117020347" class="btn whatsapp">WhatsApp</a>
 </div>
 
-<img src="https://img.freepik.com/free-photo/teacher-helping-student-homework_23-2148892568.jpg">
+<img src="https://images.unsplash.com/photo-1588072432836-e10032774350">
 </section>
 
+<!-- SERVICES -->
 <section class="services">
 <h2>Our Services</h2>
-
 <div class="cards">
-<div class="card">🏠 Home Tuition</div>
-<div class="card">💻 Online Classes</div>
-<div class="card">📚 All Subjects</div>
-<div class="card">🏆 Exam Prep</div>
+<div class="card">Home Tuition</div>
+<div class="card">Online Classes</div>
+<div class="card">All Subjects</div>
+<div class="card">Exam Prep</div>
 </div>
 </section>
 
-<section class="forms">
-
+<!-- FORMS -->
+<section class="form-section">
 <div class="form-box">
 <h3>Join as Parent</h3>
-<input placeholder="Your Name">
-<input placeholder="Phone Number">
+<input placeholder="Name">
+<input placeholder="Phone">
 <textarea placeholder="Message"></textarea>
-<button class="submit">Submit</button>
+<button class="submit" onclick="showPopup()">Submit</button>
 </div>
 
 <div class="form-box">
 <h3>Join as Tutor</h3>
-<input placeholder="Your Name">
-<input placeholder="Phone Number">
+<input placeholder="Name">
+<input placeholder="Subject">
 <input placeholder="Experience">
-<button class="submit">Apply</button>
+<button class="apply" onclick="showPopup()">Apply</button>
 </div>
-
 </section>
 
+<!-- POPUP -->
+<div id="popup" class="popup">
+<h3>✅ Thank You!</h3>
+<p>We will contact you soon.</p>
+<button onclick="closePopup()">OK</button>
+</div>
+
+<!-- FLOAT -->
 <a href="https://wa.me/919117020347" class="whatsapp-float">💬</a>
+<a href="tel:9117020347" class="call-float">📞</a>
+
+<script>
+function showPopup(){
+document.getElementById("popup").style.display="block";
+}
+function closePopup(){
+document.getElementById("popup").style.display="none";
+}
+</script>
 
 </body>
 </html>
