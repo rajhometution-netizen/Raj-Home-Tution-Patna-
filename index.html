@@ -1,271 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Raj Home Tution Patna</title>
+<title>Best Home Tuition in Patna | Raj Home Tuition</title>
 
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<meta name="description" content="Raj Home Tuition provides best tutors in Patna for all classes and competitive exams.">
+<meta name="keywords" content="Home Tuition Patna, Tutor Patna, Raj Home Tuition">
+<meta name="author" content="Raj Home Tuition">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-background:#f5f7fb;
-}
-
-/* TOP BAR */
-.topbar{
-background:#0b2c5f;
-color:#fff;
-padding:8px 20px;
-display:flex;
-justify-content:space-between;
-font-size:14px;
-}
-
-/* NAVBAR */
-header{
-background:#fff;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 20px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
-
-.logo{
-font-size:22px;
-font-weight:700;
-color:#0b2c5f;
-}
-
-nav a{
-margin:0 10px;
-text-decoration:none;
-color:#333;
-font-weight:500;
-}
-
-.call-btn{
-background:#0b2c5f;
-color:#fff;
-padding:8px 15px;
-border-radius:6px;
-}
+body{margin:0;font-family:'Poppins',sans-serif;background:#f5f7fb}
 
 /* HERO */
-.hero{
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:50px 20px;
-background:linear-gradient(135deg,#ffffff,#eaf1ff);
-}
-
-.hero-text{
-max-width:50%;
-}
-
-.hero h1{
-font-size:40px;
-color:#0b2c5f;
-}
-
-.hero h1 span{
-color:#ff9900;
-}
-
-.hero p{
-margin:15px 0;
-}
-
-.hero-btns a{
-display:inline-block;
-margin-right:10px;
-padding:10px 18px;
-border-radius:6px;
-text-decoration:none;
-color:#fff;
-}
-
-.call{
-background:#0b2c5f;
-}
-
-.whatsapp{
-background:#25d366;
-}
-
-.hero img{
-width:45%;
-border-radius:10px;
-}
+.hero{display:flex;padding:40px;background:#fff}
+.hero-text{width:50%}
+.hero h1{color:#0b2c5f}
+.hero img{width:50%;border-radius:10px}
 
 /* SERVICES */
-.services{
-text-align:center;
-padding:40px 20px;
-}
+.cards{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
+.card{background:#fff;padding:20px;border-radius:10px;box-shadow:0 5px 15px #ccc;width:200px}
 
-.services h2{
-color:#0b2c5f;
-margin-bottom:20px;
-}
+/* GALLERY */
+.gallery{padding:40px;text-align:center}
+.gallery img{width:200px;margin:10px;border-radius:10px}
 
-.cards{
-display:flex;
-gap:20px;
-justify-content:center;
-flex-wrap:wrap;
-}
-
-.card{
-background:#fff;
-padding:20px;
-border-radius:10px;
-width:220px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
+/* TESTIMONIAL */
+.testimonial{padding:40px;background:#fff;text-align:center}
+.review{max-width:400px;margin:auto;background:#f0f0f0;padding:20px;border-radius:10px}
 
 /* FORM */
-.form-section{
-display:flex;
-gap:20px;
-padding:40px 20px;
-flex-wrap:wrap;
-}
+.form-section{display:flex;gap:20px;padding:40px}
+.form-box{flex:1;background:#0b2c5f;color:white;padding:20px;border-radius:10px}
+input,textarea{width:100%;margin:8px 0;padding:10px}
 
-.form-box{
-flex:1;
-background:#0b2c5f;
-padding:20px;
-border-radius:10px;
-color:#fff;
-}
-
-.form-box input, .form-box textarea{
-width:100%;
-margin:8px 0;
-padding:10px;
-border:none;
-border-radius:5px;
-}
-
-.form-box button{
-background:#ff9900;
-border:none;
-padding:10px;
-color:#fff;
-border-radius:5px;
-cursor:pointer;
-}
-
-/* FLOAT BUTTONS */
-.whatsapp-float{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25d366;
-color:#fff;
-padding:12px;
-border-radius:50%;
-font-size:20px;
-}
-
-.call-float{
-position:fixed;
-bottom:80px;
-right:20px;
-background:#0b2c5f;
-color:#fff;
-padding:12px;
-border-radius:50%;
-font-size:20px;
-}
+/* FLOAT */
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25d366;color:white;padding:12px;border-radius:50%}
 </style>
+
+<!-- EMAILJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 </head>
 
 <body>
 
-<!-- TOP BAR -->
-<div class="topbar">
-<div>📞 9117020347 | WhatsApp</div>
-<div>rajhometution01@gmail.com</div>
-</div>
-
-<!-- HEADER -->
-<header>
-<div class="logo">RAJ HOME TUTION</div>
-
-<nav>
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Services</a>
-<a href="#">Contact</a>
-</nav>
-
-<a href="tel:9117020347" class="call-btn">Call Now</a>
-</header>
-
 <!-- HERO -->
 <section class="hero">
-
 <div class="hero-text">
-<h1>Patna ka Sabse <span>Oldest</span> Home Tuition Provider</h1>
-
-<p>Nursery to 12th | All Subjects | Competitive Exams</p>
-
-<div class="hero-btns">
-<a href="tel:9117020347" class="call">Call Now</a>
-<a href="https://wa.me/919117020347" class="whatsapp">WhatsApp</a>
+<h1>Patna ka Best Home Tuition Provider</h1>
+<p>All Classes | All Subjects</p>
 </div>
-</div>
-
 <img src="https://images.unsplash.com/photo-1588072432836-e10032774350">
-
 </section>
 
 <!-- SERVICES -->
-<section class="services">
-<h2>Our Services</h2>
-
+<section>
+<h2 style="text-align:center">Our Services</h2>
 <div class="cards">
+<div class="card">Home Tuition</div>
+<div class="card">Online Classes</div>
+<div class="card">All Subjects</div>
+<div class="card">Exam Prep</div>
+</div>
+</section>
 
-<div class="card">
-<h3>Home Tuition</h3>
-<p>Personal teacher at your home</p>
+<!-- GALLERY -->
+<section class="gallery">
+<h2>Gallery</h2>
+<img src="https://images.unsplash.com/photo-1577896851231-70ef18881754">
+<img src="https://images.unsplash.com/photo-1584697964403-1c7c1c2d9c73">
+<img src="https://images.unsplash.com/photo-1606326608690-4e0281b1e588">
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="testimonial">
+<h2>What Students Say</h2>
+
+<div class="review">
+⭐️⭐️⭐️⭐️⭐️  
+<p>Best home tuition service in Patna. Teachers are very helpful.</p>
+<b>- Rahul Kumar</b>
 </div>
 
-<div class="card">
-<h3>Online Classes</h3>
-<p>Live interactive classes</p>
+<br>
+
+<div class="review">
+⭐️⭐️⭐️⭐️⭐️  
+<p>My marks improved a lot after joining.</p>
+<b>- Neha Singh</b>
 </div>
 
-<div class="card">
-<h3>All Subjects</h3>
-<p>Maths, Science, English</p>
-</div>
-
-<div class="card">
-<h3>Exam Prep</h3>
-<p>IIT-JEE, NEET</p>
-</div>
-
-</div>
 </section>
 
 <!-- FORM -->
@@ -273,25 +103,36 @@ font-size:20px;
 
 <div class="form-box">
 <h3>Join as Parent</h3>
-<input placeholder="Your Name">
-<input placeholder="Phone Number">
-<textarea placeholder="Message"></textarea>
-<button>Submit</button>
-</div>
-
-<div class="form-box">
-<h3>Join as Tutor</h3>
-<input placeholder="Your Name">
-<input placeholder="Subject">
-<input placeholder="Experience">
-<button>Apply</button>
+<form id="contactForm">
+<input type="text" id="name" placeholder="Your Name">
+<input type="text" id="phone" placeholder="Phone Number">
+<textarea id="message" placeholder="Message"></textarea>
+<button type="submit">Submit</button>
+</form>
 </div>
 
 </section>
 
-<!-- FLOAT BUTTONS -->
-<a href="https://wa.me/919117020347" class="whatsapp-float">💬</a>
-<a href="tel:9117020347" class="call-float">📞</a>
+<!-- FLOAT -->
+<a href="https://wa.me/919117020347" class="whatsapp">💬</a>
+
+<script>
+(function(){
+emailjs.init("YOUR_PUBLIC_KEY");
+})();
+
+document.getElementById("contactForm").addEventListener("submit",function(e){
+e.preventDefault();
+
+emailjs.send("YOUR_SERVICE_ID","YOUR_TEMPLATE_ID",{
+name:document.getElementById("name").value,
+phone:document.getElementById("phone").value,
+message:document.getElementById("message").value
+}).then(function(){
+alert("✅ Message Sent Successfully!");
+});
+});
+</script>
 
 </body>
 </html>
