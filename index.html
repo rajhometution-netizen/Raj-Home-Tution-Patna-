@@ -3,279 +3,168 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Raj Home Tution</title>
 
-<!-- ICONS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<title>Raj Home Tuition Patna</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
 <style>
-body {margin:0;font-family:Arial;background:#f5f7fb}
+body {
+    margin: 0;
+    font-family: Arial;
+}
 
 /* TOP BAR */
-.topbar{
-background:#0b2a5b;
-color:white;
-padding:8px 20px;
-display:flex;
-justify-content:space-between;
-font-size:14px;
+.topbar {
+    background:#0a2a52;
+    color:white;
+    padding:8px 20px;
+    display:flex;
+    justify-content:space-between;
+    font-size:14px;
 }
 
 /* NAVBAR */
-.navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 20px;
-background:white;
-box-shadow:0 2px 5px rgba(0,0,0,0.1);
+nav {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+    background:white;
 }
 
-.navbar img{height:60px}
-
-.nav-links a{
-margin:0 12px;
-text-decoration:none;
-color:#333;
-font-weight:500;
+nav img {
+    height:60px;
 }
 
-.call-btn{
-background:#0b2a5b;
-color:white;
-padding:10px 18px;
-border-radius:6px;
+nav ul {
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+nav ul li {
+    cursor:pointer;
 }
 
 /* HERO */
-.hero{
-display:flex;
-align-items:center;
-padding:50px;
-background:white;
+.hero {
+    display:flex;
+    align-items:center;
+    padding:50px;
+    background:#f5f5f5;
 }
 
-.hero-text{width:50%}
-
-.hero-text h1{
-font-size:42px;
-color:#0b2a5b;
+.hero-text {
+    width:50%;
 }
 
-.hero-text span{color:#f4a100}
-
-.hero img{
-width:50%;
-border-radius:10px;
+.hero-text h1 {
+    font-size:40px;
 }
 
-.btn{
-padding:12px 20px;
-border:none;
-margin-right:10px;
-border-radius:5px;
-cursor:pointer;
+.hero-text span {
+    color:#ff9900;
 }
 
-.call{background:#0b2a5b;color:white}
-.whatsapp{background:#25D366;color:white}
+.hero img {
+    width:50%;
+    border-radius:10px;
+}
+
+/* BUTTONS */
+.btn {
+    padding:10px 20px;
+    border:none;
+    margin-right:10px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.call {
+    background:#0a2a52;
+    color:white;
+}
+
+.whatsapp {
+    background:#25D366;
+    color:white;
+}
 
 /* SERVICES */
-.services{text-align:center;padding:50px}
-
-.service-box{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
+.services {
+    text-align:center;
+    padding:50px;
 }
 
-.card{
-padding:25px;
-width:220px;
-background:white;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
-border-radius:10px;
-transition:0.3s;
+.cards {
+    display:flex;
+    gap:20px;
+    justify-content:center;
 }
 
-.card:hover{
-transform:translateY(-10px);
+.card {
+    padding:20px;
+    box-shadow:0 2px 10px #ccc;
+    border-radius:10px;
 }
 
-.card i{
-font-size:30px;
-color:#0b2a5b;
-margin-bottom:10px;
-}
-
-/* FORM */
-.form-section{
-display:flex;
-gap:20px;
-padding:40px;
-background:#0b2a5b;
-}
-
-.form-box{
-background:white;
-padding:20px;
-width:50%;
-border-radius:10px;
-}
-
-input, textarea{
-width:100%;
-padding:10px;
-margin:8px 0;
-}
-
-/* POPUP */
-.popup{
-display:none;
-position:fixed;
-bottom:20px;
-left:50%;
-transform:translateX(-50%);
-background:#d4edda;
-color:green;
-padding:15px;
-border-radius:5px;
-}
-
-/* FLOAT BUTTONS */
-.whatsapp-float{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px;
-border-radius:50%;
-font-size:22px;
-}
-
-.call-float{
-position:fixed;
-bottom:90px;
-right:20px;
-background:#0b2a5b;
-color:white;
-padding:15px;
-border-radius:50%;
-font-size:22px;
+/* FLOAT WHATSAPP */
+.float {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    font-size:20px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- TOP -->
 <div class="topbar">
-<div>📞 9117020347 | WhatsApp: 9117020347 | ✉ rajhometution01@gmail.com</div>
-<div>
-<i class="fab fa-facebook"></i>
-<i class="fab fa-instagram"></i>
-</div>
+    <div>📞 9117020347 | 📧 rajhometution01@gmail.com</div>
+    <div>Follow us</div>
 </div>
 
-<!-- NAV -->
-<div class="navbar">
-<img src="logo.png">
-<div class="nav-links">
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Services</a>
-<a href="#">Gallery</a>
-<a href="#">Contact</a>
-<a class="call-btn" href="#">Call Now</a>
-</div>
-</div>
+<nav>
+    <img src="logo.png">
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+    </ul>
+</nav>
 
-<!-- HERO -->
-<div class="hero">
-<div class="hero-text">
-<h1>Patna ka Sabse <span>Oldest</span><br>Home Tuition Provider</h1>
-<p>We provide experienced tutors for all classes.</p>
-<button class="btn call"><i class="fa fa-phone"></i> Call Now</button>
-<button class="btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</button>
-</div>
-<img src="https://images.unsplash.com/photo-1588072432836-e10032774350">
-</div>
+<section class="hero">
+    <div class="hero-text">
+        <h1>Patna ka Sabse <span>Oldest</span> Home Tuition Provider</h1>
+        <p>Nursery to 12th | All Subjects | Competitive Exams</p>
 
-<!-- SERVICES -->
-<div class="services">
-<h2>Our Services</h2>
-<div class="service-box">
+        <button class="btn call">📞 Call Now</button>
+        <button class="btn whatsapp">WhatsApp</button>
+    </div>
 
-<div class="card">
-<i class="fa fa-home"></i>
-<h3>Home Tuition</h3>
-<p>Personal teacher at home</p>
-</div>
+    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350">
+</section>
 
-<div class="card">
-<i class="fa fa-laptop"></i>
-<h3>Online Classes</h3>
-<p>Live classes</p>
-</div>
+<section class="services">
+    <h2>Our Services</h2>
 
-<div class="card">
-<i class="fa fa-book"></i>
-<h3>All Subjects</h3>
-<p>All subjects available</p>
-</div>
+    <div class="cards">
+        <div class="card">Home Tuition</div>
+        <div class="card">Online Classes</div>
+        <div class="card">Exam Prep</div>
+    </div>
+</section>
 
-<div class="card">
-<i class="fa fa-trophy"></i>
-<h3>Exam Prep</h3>
-<p>JEE, NEET, Boards</p>
-</div>
-
-</div>
-</div>
-
-<!-- FORM -->
-<div class="form-section">
-
-<div class="form-box">
-<h3>Join Us as Parents</h3>
-<input type="text" placeholder="Your Name">
-<input type="text" placeholder="Phone Number">
-<textarea placeholder="Message"></textarea>
-<button onclick="showPopup()" class="btn call">Submit</button>
-</div>
-
-<div class="form-box">
-<h3>Join Us as Tutor</h3>
-<input type="text" placeholder="Your Name">
-<input type="text" placeholder="Qualification">
-<input type="text" placeholder="Phone Number">
-<button onclick="showPopup()" class="btn call">Apply</button>
-</div>
-
-</div>
-
-<!-- POPUP -->
-<div id="popup" class="popup">
-✅ Thank you! Our team will contact you within 3 days.
-</div>
-
-<!-- FLOAT BUTTONS -->
-<a href="https://wa.me/919117020347" class="whatsapp-float">
-<i class="fab fa-whatsapp"></i>
+<a href="#" class="float">
+    <i class="fab fa-whatsapp"></i>
 </a>
-
-<a href="tel:9117020347" class="call-float">
-<i class="fa fa-phone"></i>
-</a>
-
-<script>
-function showPopup(){
-document.getElementById("popup").style.display="block";
-setTimeout(()=>{document.getElementById("popup").style.display="none";},3000);
-}
-</script>
 
 </body>
 </html>
