@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Raj Home Tuition | Patna</title>
+<title>Raj Home Tuition Patna</title>
 
+<!-- FONT -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:Poppins;background:#f5f7fb;}
-
-/* TOP BAR */
-.topbar{
-background:#0b2a5c;
-color:#fff;
-display:flex;
-justify-content:space-between;
-padding:8px 30px;
-font-size:14px;
+body{
+margin:0;
+font-family:'Poppins', sans-serif;
+background:#f5f7fb;
 }
 
 /* HEADER */
@@ -27,12 +22,17 @@ header{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:15px 40px;
+padding:15px 30px;
 background:#fff;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+header img{
+height:60px;
 }
 
 nav a{
-margin:0 15px;
+margin:0 10px;
 text-decoration:none;
 color:#333;
 font-weight:500;
@@ -49,11 +49,15 @@ border-radius:8px;
 .hero{
 display:flex;
 align-items:center;
+justify-content:space-between;
 padding:60px;
 background:#fff;
+flex-wrap:wrap;
 }
 
-.hero-left{flex:1;}
+.hero-left{
+max-width:550px;
+}
 
 .hero h1{
 font-size:42px;
@@ -70,106 +74,63 @@ margin:15px 0;
 color:#555;
 }
 
+.features span{
+margin-right:15px;
+display:inline-block;
+margin-top:10px;
+font-size:14px;
+}
+
+/* BUTTON */
 .btn{
-padding:12px 22px;
+padding:12px 20px;
 border-radius:8px;
+text-decoration:none;
 margin-right:10px;
 display:inline-block;
-text-decoration:none;
 }
 
-.call{background:#0b2a5c;color:#fff;}
-.whatsapp{background:#25D366;color:#fff;}
+.call{
+background:#0b2a5c;
+color:#fff;
+}
+
+.whatsapp{
+background:#25D366;
+color:#fff;
+}
 
 .hero img{
-width:480px;
+width:500px;
 border-radius:10px;
-}
-
-/* SERVICES */
-.services{
-text-align:center;
-padding:60px;
-}
-
-.cards{
-display:flex;
-justify-content:center;
-gap:25px;
-flex-wrap:wrap;
-}
-
-.card{
-background:#fff;
-padding:25px;
-border-radius:12px;
-width:230px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* FORM SECTION */
-.forms{
-display:flex;
-gap:25px;
-padding:50px;
-background:#0b2a5c;
-}
-
-.form-box{
-background:#fff;
-padding:20px;
-border-radius:10px;
-flex:1;
-}
-
-input,textarea{
-width:100%;
-padding:10px;
-margin:10px 0;
-border:1px solid #ccc;
-border-radius:6px;
-}
-
-.submit{
-background:#f4a51c;
-color:#fff;
-border:none;
-padding:12px;
-border-radius:6px;
 }
 
 /* WHATSAPP FLOAT */
 .whatsapp-float{
 position:fixed;
-bottom:20px;
 right:20px;
+bottom:20px;
 background:#25D366;
-color:#fff;
+color:white;
 padding:16px;
 border-radius:50%;
 font-size:22px;
 }
 </style>
+
 </head>
 
 <body>
 
-<!-- TOP BAR -->
-<div class="topbar">
-<div>📞 9117020347 | 📧 rajhometution01@gmail.com</div>
-<div>Follow Us</div>
-</div>
-
 <!-- HEADER -->
 <header>
-<img src="logo.png" height="60">
+<img src="logo.png">
 
 <nav>
 <a href="#">Home</a>
-<a href="#">About Us</a>
-<a href="#">Our Services</a>
+<a href="#">About</a>
+<a href="#">Services</a>
 <a href="#">Gallery</a>
-<a href="#">Testimonials</a>
 <a href="#">Contact</a>
 </nav>
 
@@ -178,47 +139,26 @@ font-size:22px;
 
 <!-- HERO -->
 <section class="hero">
+
 <div class="hero-left">
 <h1>Patna ka Sabse <span>Oldest</span><br>Home Tuition Provider</h1>
 
-<p>We provide experienced and qualified tutors for all classes and competitive exams.</p>
+<p>We provide experienced and qualified tutors for all classes (Nursery to 12th) and Competitive Exams.</p>
+
+<div class="features">
+<span>🏠 Home Tuition</span>
+<span>💻 Online Classes</span>
+<span>📚 All Subjects</span>
+</div>
+
+<br>
 
 <a href="tel:9117020347" class="btn call">Call Now</a>
 <a href="https://wa.me/919117020347" class="btn whatsapp">WhatsApp</a>
 </div>
 
+<div class="hero-right">
 <img src="https://img.freepik.com/free-photo/teacher-helping-student-homework_23-2148892568.jpg">
-</section>
-
-<!-- SERVICES -->
-<section class="services">
-<h2>Our Services</h2>
-
-<div class="cards">
-<div class="card">🏠 Home Tuition</div>
-<div class="card">💻 Online Classes</div>
-<div class="card">📚 All Subjects</div>
-<div class="card">🏆 Exam Preparation</div>
-</div>
-</section>
-
-<!-- FORMS -->
-<section class="forms">
-
-<div class="form-box">
-<h3>Join Us as Parent</h3>
-<input placeholder="Your Name">
-<input placeholder="Phone Number">
-<textarea placeholder="Message"></textarea>
-<button class="submit">Submit Now</button>
-</div>
-
-<div class="form-box">
-<h3>Join Us as Tutor</h3>
-<input placeholder="Your Name">
-<input placeholder="Subject">
-<input placeholder="Experience">
-<button class="submit">Apply Now</button>
 </div>
 
 </section>
